@@ -14,7 +14,9 @@ const NavComponent = () => {
 
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">\<img src={portfolioBackground}
+        alt="portfolio background">
+        </img>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#home">Sachi Kautakaoka</a>
                 <button className="navbar-toggler" type="button" onClick={toggleNav}>
