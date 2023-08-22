@@ -1,18 +1,32 @@
 import React from 'react';
-import './Footer.css';
 
 function Footer() {
-    
-          <Footer className="flex-row px-1">
-                (
-                    <a href='https://githun.com/kaleikautakaoka/Portfolio2.0'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                        Sachi's GitHub
-                    </a>
-                )
-              
-            </Footer>
-        }
+
+  // Replace links with social media profiles
+  const icons = [
+    {
+      name: "fab fa-github",
+      link: "https://github.com/kaleikautakaoka/"
+    },
+    {
+      name: "fab fa-linkedin",
+      link: "https://www.linkedin.com/in/sachi-undefined-06a01b243/"
+    },
+    // {
+    //   name: "fab fa-stack-overflow",
+    //   link: ""
+    // }
+  ]
+
+  return (
+    <footer className="flex-row px-1">
+      {icons.map(icon =>
+      (
+        <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+      )
+        )}
+    </footer>
+  );
+}
 
 export default Footer;

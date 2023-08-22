@@ -1,35 +1,38 @@
-import { useContext } from 'react';
-import { flowContext } from './functionality/flow';
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import './App.css';
-
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Page from "./components/Page";
+import Footer from "./components/Footer";
 
 function App() {
+  const [pages] = useState([
+    {
+      name: "about me"
+    },
+    { name: "portfolio" },
+    { name: "contact" },
+    {
+      name: "resume"
+    }
+  ]);
 
-  const [{ flowName }] = useContext(flowContext);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div className={`${flowName}`}>
+    <div>
       <Header>
-        <Nav />
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Nav>
       </Header>
       <main>
-        <About />
-        <Portfolio />
-        <Resume />
-        <Contact />
-        <Projects />
+        <Page currentPage={currentPage}></Page>
       </main>
       <Footer />
-       </div>
-  )
+    </div>
+  );
 }
 
 export default App;
