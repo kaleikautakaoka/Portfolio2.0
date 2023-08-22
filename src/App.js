@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
+import { flowContext } from './functionality/flow';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
 import './App.css';
 
+
 function App() {
+
+  const [{ flowName }] = useContext(flowContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className={`${flowName}`}>
+      <Header>
+        <Nav />
+      </Header>
+      <main>
+        <About />
+        <Portfolio />
+        <Resume />
+        <Contact />
+        <Projects />
+      </main>
+      <Footer />
+       </div>
+  )
 }
 
 export default App;
