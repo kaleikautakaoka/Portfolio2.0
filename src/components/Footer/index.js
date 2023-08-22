@@ -1,36 +1,18 @@
 import React from 'react';
+import './Footer.css';
 
 function Footer() {
     
-        const icons = [
-          {
-            name: 'discord',
-            link: 'https://discord.com/channels/@me',
-          },
-          {
-            name: 'github',
-            link: 'https://github.com/kaleikautakaoka',
-          },
-            {
-            name: 'linkedin',
-            link: 'https://www.linkedin.com/in/sachi-undefined-06a01b243/'
-            },
-            {
-            name: 'stack-overflow',
-            link: 'https://stackoverflow.com/users/22385744/kaleikautakaoka'
-            },
-
-        ]
-
-        return (
-            <footer className="flex-row px-1">
-                {icons.map(icon =>
+          <Footer className="flex-row px-1">
                 (
-                    <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+                    <a href='https://githun.com/kaleikautakaoka/Portfolio2.0'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                        Sachi's GitHub
+                    </a>
                 )
-                ) }
-            </footer>
-            );
+              
+            </Footer>
         }
 
 export default Footer;

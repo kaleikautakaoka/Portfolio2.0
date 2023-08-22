@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import portfolioBackground from '../../assets/cover/cover-image.jpg';
+import { icons, projects } from '../../data';
+import './index.css'
+
 
 const NavComponent = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
