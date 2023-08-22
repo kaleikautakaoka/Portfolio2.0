@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'src/App.css';
+import portfolioBackground from '../../assets/cover/cover-image.jpg';
 
 const NavComponent = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,11 +14,15 @@ const NavComponent = () => {
     }
 
     return (
+        <nav>\<img src={portfolioBackground}
+        alt="portfolio background">
+        </img>
         <div>
             <header className="header_section">
                 {/* <div className="container-fluid"> */}
               </header> 
               </div>
+              </nav>
  
  );
 }
