@@ -103,7 +103,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--pink);
 }
 
 header a {
@@ -137,6 +137,8 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  height: auto;
+  border-radius: 30px;
 }
 
 span[role='img'] {

@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Page from "./components/Page";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+
 
 function App() {
   const [pages] = useState([
@@ -15,7 +17,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div>
+    <Router>
       <Header>
         <Nav
           pages={pages}
@@ -26,8 +28,9 @@ function App() {
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
+   
       <Footer />
-    </div>
+    </Router>
   );
 }
 

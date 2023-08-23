@@ -3,7 +3,7 @@ import { removeHyphensAndCapitalize } from '../../utils/helpers';
 
 function Project({ project }) {
 
-  const { name, description, link } = project;
+  const { name, description, link, image } = project;
 
   return (
     <div className="project" key={name}>
@@ -15,7 +15,7 @@ function Project({ project }) {
       <div className="project-text">
         <h3>
           <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
-          <a href={link}>
+          <a href={image}>
             <i className="fab fa-github"></i>
           </a>
         </h3>
