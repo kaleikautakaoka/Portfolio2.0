@@ -10,11 +10,19 @@ main {
   --light: #fafafa;
   --dark: #799FBA;
   --darker: #1F3B60;
-  --alpha: rgba(255,255,255,.7);
+  --grayish: #222330;
+  --lightgray: #d1d2db;
+  --superlight: #cbcbd4;
+  --textcolor: #d9d3e0;
+  --alpha: rgba(221, 189, 189, 0.7);
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -33,9 +41,10 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--darker);
-  color: var(--light);
-  font-family: 'Open Sans', sans-serif;
+  background: var(--grayish);
+  background-image: linear-gradient(to right, var(--superlight), var(--grayish));
+  color: var(--textcolor);
+  font-family: 'serif', 'MonoSpace', cursive;
 }
 
 h1,
@@ -44,46 +53,46 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Aladin', cursive;
+  font-family: 'Monospace', cursive;
   font-weight: 500;
   margin: 5px 0;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 50px 20px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 10px rgba(128, 126, 136, 0.5);
 }
 
 h2 {
-  font-size: 2rem;
-}
-
-h3 {
   font-size: 1.75rem;
 }
 
-h4 {
+h3 {
   font-size: 1.5rem;
 }
 
-h5 {
+h4 {
   font-size: 1.25rem;
 }
 
-h6 {
+h5 {
   font-size: 1rem;
 }
 
+h6 {
+  font-size: .75rem;
+}
+
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 20px 0;
   line-height: 2rem;
 }
 
 a {
-  color: var(--light);
+  color: var(--textcolor);
   text-decoration: none;
   opacity: .5;
 }
@@ -228,7 +237,7 @@ footer a:hover {
 textarea {
   width: 600px;
   height: 200px;
-  border: 3px solid #cccccc;
+  border: 3px solid #b9b3b3;
   padding: 5px;
   margin-top: 10px;
 }

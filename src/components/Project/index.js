@@ -3,19 +3,19 @@ import { removeHyphensAndCapitalize } from '../../utils/helpers';
 
 function Project({ project }) {
 
-  const { name, repo, link, description } = project;
+  const { name, description, link } = project;
 
   return (
     <div className="project" key={name}>
       <img
-        src={require(`../../assets/projects/${name}.png`).default}
+        src={`images/${name}.png`}
         alt={removeHyphensAndCapitalize(name)}
         className="project-bg"
       />
       <div className="project-text">
         <h3>
           <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
-          <a href={repo}>
+          <a href={link}>
             <i className="fab fa-github"></i>
           </a>
         </h3>
