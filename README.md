@@ -1,73 +1,96 @@
 # Portfolio2.0
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Overview
+```
+Portfolio2.0 is a redo of my portfolio using React. 
+
+
+```
+## Table of Contents
+
+- [Technology Used](#technlogy-used)
+- [Screenshot](#screenshot)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Challenges](#challenges)
+- [Future Enhancements](#future-enhancements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Special Thank you](#special-thank-you)
+- [Credits](#credits)
+
+## Technology Used
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-HTML-1f425f.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-React-1f425f.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-Node.js-1f425f.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-CSS-1f425f.svg)](https://www.javascript.com)
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com)
+
+## Screenshot
+## Demo/Screenshot
+
+<table>
+<tr>
+<td><img src="./src/assets/portfolio2.png" alt="screenshot of webpage"></td>
+</tr>
+</table>
+
+
+## Acceptance Criteria
+```md
+WHEN I open this app
+THEN I am presented with the "About Me" page
+
+WHEN I click on the links
+THEN I am presented with pages for the portfolio, resume, and contact
+WHEN I visit the contact page
+THEN I am able to enter my information
+This would include:
+-	Name
+-	Email
+-	Message
+
+```
+## Challenges
+- Frontend Components
+
+## Future Enhancements
+- Get Images to render on portfolio page
+- Add additional styling
+- Add additional pages
+
+## Installation
+
+To install the necessary dependencies, run the following command:
+
+```Visit github and clone the repo. Run npm install to install all dependencies.```
+
+-  [Link to repo](https://github.com/kaleikautakaoka/Portfolio2.0.git)
+
+
+## Usage
+
+```Visit the deployed site```
+```Click on the links to navigate through the site```
+
+-  [Deployment](https://kaleikautakaoka.github.io/Portfolio2.0/)
+
+
+## License
+
+[![License:](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+## Contributor
+- Sachi Kaleikau-Takaoka 
+
+## Special Thank you
+- Phil Loy
+- Rob Johnson
+
 ## Credits
 Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4636686">Gerd Altmann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4636686">Pixabay</a>
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
