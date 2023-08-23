@@ -1,12 +1,14 @@
+
+
 import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
   const [formState, setFormState] = useState({
-    name: 'Sachi Takaoka',
-    email: 'sachitakaoka@gmail.com',
-    message: 'Nice to meet you!',
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [errorMessage, setErrorMessage] = useState('');

@@ -61,7 +61,7 @@ function Portfolio() {
 
 return (
     <div>
-      <div className="flex-row">
+      <div className="flex-center">
         {projects.map((project, idx) => (
           <Projects
             project={project}
