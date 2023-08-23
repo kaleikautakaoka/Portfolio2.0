@@ -56,9 +56,9 @@ This would include:
 ```
 ## Challenges
 - Frontend Components
+- I created this repo twice because I wanted to try to use a different method to create the portfolio. I was able to get the portfolio to render but I was not able to get the images to render. I was able to get the images to render on the first repo but I was not able to get the portfolio to render. I decided to go with the repo that rendered the portfolio. I will continue to work on the repo that renders the images.
 
 ## Future Enhancements
-- Get Images to render on portfolio page
 - Add additional styling
 - Add additional pages
 
